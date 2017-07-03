@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="eadafe4a179342c9ae3f08ccfd8d05b3" Name="Diagram1" ZoomLevel="98">
+        <EntityTypeShape EntityType="CIMS_Model.client_details" Width="1.5" PointX="10.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.client_status" Width="1.5" PointX="10.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.currency" Width="1.5" PointX="6" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.delivery_status" Width="1.5" PointX="12.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.document_status" Width="1.5" PointX="12.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.document_status33" Width="1.5" PointX="14.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.ds_external_email" Width="1.5" PointX="14.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.duty_of_care_comments" Width="1.5" PointX="14.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.email_notification_parameters_log" Width="1.5" PointX="14.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instruction_comments" Width="1.5" PointX="16.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instruction_picked" Width="1.5" PointX="16.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instruction_submission" Width="1.5" PointX="16.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instruction_type_allocations" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instruction" Width="1.5" PointX="8.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instructions_attachment" Width="1.5" PointX="16.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instructions_types" Width="1.5" PointX="3" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.menu" Width="1.5" PointX="7.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.operations_log" Width="1.5" PointX="16.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.portfolio" Width="1.5" PointX="0.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.reference_prefix" Width="1.5" PointX="2.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.relationship_managers" Width="1.5" PointX="4.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.report_rights" Width="1.5" PointX="12.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.search_by" Width="1.5" PointX="10.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.sector" Width="1.5" PointX="12.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.sub_menu" Width="1.5" PointX="10" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.system_settings" Width="1.5" PointX="18.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.system_users" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.user_branch" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.user_report_rights" Width="1.5" PointX="12.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.user_status" Width="1.5" PointX="18.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.user_team_leader" Width="1.5" PointX="5.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.user_title" Width="1.5" PointX="18.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.user_type_default" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.email_notification_parameters" Width="1.5" PointX="18.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.work_flow" Width="1.5" PointX="18.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.work_load_report_paramaters" Width="1.5" PointX="14.75" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.client_view" Width="1.5" PointX="16.75" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.combined_detailed_transaction_log_view" Width="1.5" PointX="18.75" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.detailed_transaction_log_view" Width="1.5" PointX="20.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.document_status_view" Width="1.5" PointX="0.75" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.inprogress_by_stage_and_instruction_type" Width="1.5" PointX="10.75" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instruction_log_view" Width="1.5" PointX="2.75" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instruction_picked_view" Width="1.5" PointX="4.75" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instruction_submission_view" Width="1.5" PointX="22.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instructions_comments_view" Width="1.5" PointX="22.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instructions_timing_view" Width="1.5" PointX="22.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instructions_view" Width="1.5" PointX="12.75" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instructions_view2" Width="1.5" PointX="14.75" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.instructios_allocation_view" Width="1.5" PointX="24.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.system_users_view" Width="1.5" PointX="24.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.transactions_view" Width="1.5" PointX="24.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.User_Security_View" Width="1.5" PointX="24.75" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CIMS_Model.user_team_leader_view" Width="1.5" PointX="24.75" PointY="23.25" IsExpanded="true" />
+        <AssociationConnector Association="CIMS_Model.FK_instructions_currency1" ManuallyRouted="false" />
+        <AssociationConnector Association="CIMS_Model.FK_instruction_type_allocations_instructions_types" ManuallyRouted="false" />
+        <AssociationConnector Association="CIMS_Model.FK_instruction_type_allocations_system_users" ManuallyRouted="false" />
+        <AssociationConnector Association="CIMS_Model.FK_instructions_instructions_types1" ManuallyRouted="false" />
+        <AssociationConnector Association="CIMS_Model.FK_sub_menu_menu" ManuallyRouted="false" />
+        <AssociationConnector Association="CIMS_Model.FK_report_rights_sub_menu" ManuallyRouted="false" />
+        <AssociationConnector Association="CIMS_Model.FK_redport_rights_sub_menu" ManuallyRouted="false" />
+        <AssociationConnector Association="CIMS_Model.FK_system_users_user_branch" ManuallyRouted="false" />
+        <AssociationConnector Association="CIMS_Model.FK_system_users_user_type" ManuallyRouted="false" />
+        <AssociationConnector Association="CIMS_Model.FK_user_team_leader_system_users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CIMS_Model.ErrorLog" Width="1.5" PointX="5.375" PointY="25.75" />
+        <EntityTypeShape EntityType="CIMS_Model.user_type" Width="1.5" PointX="7.375" PointY="25.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

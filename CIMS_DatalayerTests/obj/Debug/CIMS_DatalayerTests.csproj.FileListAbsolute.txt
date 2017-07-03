@@ -1,0 +1,39 @@
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\bin\Debug\CIMS_DatalayerTests.dll
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\bin\Debug\CIMS_DatalayerTests.pdb
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\bin\Debug\CIMS_Datalayer.dll
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\bin\Debug\EntityFramework.dll
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\bin\Debug\CIMS_Datalayer.pdb
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\bin\Debug\EntityFramework.xml
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\obj\Debug\CIMS_DatalayerTests.csprojResolveAssemblyReference.cache
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\obj\Debug\CIMS_DatalayerTests.dll
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\obj\Debug\CIMS_DatalayerTests.pdb
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\bin\Debug\CIMS_DatalayerTests.dll.config
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\bin\Debug\CIMS_DatalayerTests.dll.config
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\bin\Debug\CIMS_DatalayerTests.dll
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\bin\Debug\CIMS_DatalayerTests.pdb
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\bin\Debug\CIMS_Datalayer.dll
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\bin\Debug\EntityFramework.dll
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\bin\Debug\CIMS_Datalayer.pdb
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\bin\Debug\EntityFramework.xml
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\obj\Debug\CIMS_DatalayerTests.csprojResolveAssemblyReference.cache
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\obj\Debug\CIMS_DatalayerTests.dll
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\obj\Debug\CIMS_DatalayerTests.pdb
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\a222035\Desktop\Documents\Rotations\Rotation 2 - Operations\CIMS\CIMS Git Repo\cims\CIMS_DatalayerTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\a222450\Documents\2.Ops\2.CIMS Project\new_proj\CIMS_DatalayerTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\bin\Debug\CIMS_DatalayerTests.dll.config
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\bin\Debug\CIMS_DatalayerTests.dll
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\bin\Debug\CIMS_DatalayerTests.pdb
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\bin\Debug\CIMS_Datalayer.dll
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\bin\Debug\EntityFramework.dll
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\bin\Debug\CIMS_Datalayer.pdb
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\bin\Debug\EntityFramework.xml
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\obj\Debug\CIMS_DatalayerTests.csprojResolveAssemblyReference.cache
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\obj\Debug\CIMS_DatalayerTests.dll
+C:\Users\Jarred\Desktop\CIMS\Random]\cims\CIMS_DatalayerTests\obj\Debug\CIMS_DatalayerTests.pdb

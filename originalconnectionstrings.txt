@@ -1,0 +1,8 @@
+  <connectionStrings>
+    <add name="DefaultConnection" connectionString="Data Source=(local);Initial Catalog=cims_test;User ID=CIMS_User;Password=CIMS_User123"
+      providerName="System.Data.SqlClient" />
+    <add name="CIMS_Entities" connectionString="metadata=res://*/CIMS_Db.csdl|res://*/CIMS_Db.ssdl|res://*/CIMS_Db.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(local);initial catalog=cims_test;user id=CIMS_User;password=CIMS_User123;MultipleActiveResultSets=True;App=EntityFramework&quot;"
+      providerName="System.Data.EntityClient" />
+    <add name="cims_testConnectionString" connectionString="Data Source=LAPTOP-GEIFRGKA;Initial Catalog=cims_tz;Integrated Security=True;User ID=CIMS_User;Password=CIMS_User123"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>

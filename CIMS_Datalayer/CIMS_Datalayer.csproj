@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{409B08E2-88DB-42C7-BA91-C9CED70A89DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CIMS_Datalayer</RootNamespace>
+    <AssemblyName>CIMS_Datalayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CIMS_Db.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CIMS_Db.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CIMS_Db.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CIMS_Db.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CIMS_Db.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Ciphers.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DAccessInfo.cs" />
+    <Compile Include="eod_summary_by_status_view_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLog.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLogging.cs" />
+    <Compile Include="GenericDbFunctions.cs" />
+    <Compile Include="GetNextInfo.cs" />
+    <Compile Include="inprogress_by_status_view_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InstructionsInfo.cs" />
+    <Compile Include="LoginInfo.cs" />
+    <Compile Include="client_details.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="client_status.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="client_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="combined_detailed_transaction_log_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="currency.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="delivery_status.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="detailed_transaction_log_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="document_status.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="document_status33.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="document_status_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ds_external_email.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="duty_of_care_comments.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="email_notification_parameters.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="email_notification_parameters_log.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="inprogress_by_stage_and_instruction_type.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instruction.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instructions_attachment.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instructions_comments_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instructions_timing_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instructions_types.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instructions_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instructions_view2.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instruction_comments.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instruction_log_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instruction_picked.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instruction_picked_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instruction_submission.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instruction_submission_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instruction_type_allocations.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="instructios_allocation_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperationsLog.cs" />
+    <Compile Include="operations_log.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_get_next_instructions_by_type_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_get_next_instructions_packed_queue_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_get_next_instructions_queue_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_get_next_instructions_referred_queue_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_get_next_instructions_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_get_next_instruction_id_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_get_next_instruction_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_resources_view_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reference_prefix.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="relationship_managers.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportUtilityInfo.cs" />
+    <Compile Include="report_rights.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="resources_view_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="return_view_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="reworks_view_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RijndaelEnhanced.cs" />
+    <Compile Include="run_rate_view_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="search_by.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sector.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sub_menu.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="system_settings.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="system_users.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="system_users_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ToolsSetInfo.cs" />
+    <Compile Include="transactions_summary_view_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="transactions_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="unprocessed_by_user_type_and_instruction_type_view_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="unprocessed_by_user_type_view_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UploadClientsInfo.cs" />
+    <Compile Include="user_branch.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="user_report_rights.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User_Security_View.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="user_status.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="user_team_leader.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="user_team_leader_view.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="user_title.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="user_type.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="user_type_default.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="work_flow.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="work_load_report_paramaters.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="work_load_report_view_Result.cs">
+      <DependentUpon>CIMS_Db.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="CIMS_Db.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CIMS_Db.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="CIMS_Db.edmx.diagram">
+      <DependentUpon>CIMS_Db.edmx</DependentUpon>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CIMS_Db.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CIMS_Db.edmx</DependentUpon>
+      <LastGenOutput>CIMS_Db.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="CIMS_Db.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CIMS_Db.edmx</DependentUpon>
+      <LastGenOutput>CIMS_Db.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_db\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

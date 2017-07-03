@@ -1,0 +1,11 @@
+Copy the following to replace what is already in the web.config file (the web.config file at the bottom, not the other one).
+Your data source will be different (your laptop/PC name) i.e. not LAPTOP-GEIFRGKA, because that's my laptop lol.  
+
+ <connectionStrings>
+    <add name="DefaultConnection" connectionString="Data Source=LAPTOP-GEIFRGKA;Initial Catalog=cims_test;Integrated Security=True"
+      providerName="System.Data.SqlClient" />
+    <add name="CIMS_Entities" connectionString="metadata=res://*/CIMS_Db.csdl|res://*/CIMS_Db.ssdl|res://*/CIMS_Db.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=LAPTOP-GEIFRGKA;Initial Catalog=cims_test;Integrated Security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;"
+      providerName="System.Data.EntityClient" />
+    <add name="cims_testConnectionString" connectionString="Data Source=LAPTOP-GEIFRGKA;Initial Catalog=cims_test;Integrated Security=True"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>

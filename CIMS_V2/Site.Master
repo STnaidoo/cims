@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CIMS_V2.SiteMaster" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - CIMS</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <style type="text/css">
+ 
+        .auto-style1 {
+            max-width: 1170px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  padding: 1rem;
+  background-color: lightgray;
+  text-align: center;
+} 
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager ID="ToolkitScriptManager1" runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+       </asp:ScriptManager>
+
+          
+        <div class="navbar navbar-inverse navbar-fixed-top" style="left: 0; background: radial-gradient(at top left, cornflowerblue, darkblue); right: 0; top: 0; height: 100px; margin-bottom: 0px;">
+            <asp:Image ID="logo" runat="server" Height="90px" Width="350px" ImageAlign="Left" ImageUrl="~/images/logo2.png" />
+            <div class="auto-style1">
+                <div class="navbar-collapse collapse">
+                    <div id="loggedInTemplate" style="float: right; vertical-align:central" >
+
+
+<%--                        <ul>--%>
+<%--                            <li class="dropdown">--%>
+                                <p><a id="loggedInUserID" runat="server" href="#" style="color:black;">
+                                    <i class="fa fa-user"></i>John Smith <b class="caret"></b></a></p>
+<%--                                <ul>
+                                    <li>--%>
+                                <p><a id="LogOut" href="#" runat="server" style="color:black;" onserverclick="logOut">Log Out</a></p>
+<%--                                    </li>
+                                </ul>--%>
+<%--                            </li>--%>
+<%--                        </ul>--%>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="navigation_container" style="padding-top: 50px;">
+            <nav class="navbar navbar-default sidebar" role="navigation">
+                <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+                    <ul class="nav navbar-nav" runat="server">
+                        <li id="tdGetNext" runat="server" ><a runat="server" href="~/GetNext.aspx" onclick="tdGetNext_Click">Get Next<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-tasks"></span></a></li>
+                        <li id="tdTransactions" runat="server"><a runat="server" href="~/Instruction/Instructions.aspx" onclick="tdTransactions_Click">Instructions<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span></a></li>
+                        <li id="tdInstructionsView" runat="server"><a runat="server" href="~/InstructionView.aspx" onclick="tdInstructionsView_Click">View Instructions<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-filter"></span></a></li>
+                        <li id="tdTLView" runat="server"><a runat="server" href="~/TL_View.aspx" onclick="tdTLView_Click">TL View<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-tags"></span></a></li>
+                        <li id="tdManagerView" runat="server"><a runat="server" href="~/Managers_View.aspx" onclick="tdManagerView_Click">Manager View<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-eye-open"></span></a></li>
+                        <li id="tdLinksUsers" runat="server"><a runat="server" href="~/User_Admin.aspx" onclick="tdLInksUsers_Click">User Admin<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+
+                   
+                        <%--<li id="tdLinksRates" runat="server"><a runat="server" href="#" onserverclick="tdLinksRates_Click">Exchange Rates<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-refresh"></span></a></li>--%>
+                        <%--<li id="tdLinkAccountManagement" runat="server"><a runat="server" href="#" onserverclick="tdLinkAccountManagement_Click">Accounts Man<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-briefcase"></span></a></li>--%>
+                        <li id="tdLinksInstructionTypes" runat="server"><a runat="server" href="~/InstructionTypeAllocations.aspx" onclick="tdLinksInstructionTypes_Click">Instruction Types<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th"></span></a></li>
+                        <li id="tdLinkActionSetup" runat="server"><a runat="server" href="~/Action_Setup.aspx" onclick="tdLinkActionSetup_Click">Action Setup<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-wrench"></span></a></li>
+                        <li id="tdLinksAccountOpening" runat="server"><a runat="server" href="~/AccountOpening.aspx" onclick="tdLinksCustomers_Click">Account Opening<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
+                        <li id="tdLinksAdminPanel" runat="server"><a runat="server" href="~/AdminPanel.aspx" onclick="tdLinksAdminPanel_Click">Admin Panel<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-wrench"></span></a></li>
+                        <li id="tdLinksReports" class="dropdown" runat="server">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports<span class="caret"></span><span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-stats"></span></a>
+                            <ul class="dropdown-menu forAnimate" role="menu">
+                                <!--Reports to go under here (including the end of day report)-->
+                                <li id="tdLinkReturnReports" runat="server"><a runat="server" href="~/Reports/ReturnReport.aspx" onclick="tdLinkReturnReports_Click">Return Report</a></li>
+<%--                                <li id="tdLinkEODReports" runat="server"><a runat="server" href="~/Reports/EndOfDayReport.aspx" onclick="tdLinkEODReports_Click">End of Day</a></li>--%>
+                                <li id="tdLinkTransactionSummaryReport" runat="server"><a runat="server" href="~/Reports/TransactionSummaryReport.aspx" onclick="tdLinkTransactionSummary_Click">Transaction Summary</a></li>
+                                <li id="tdLinkTransactionReport" runat="server"><a runat="server" href="~/Reports/TransactionReport.aspx" onclick="tdLinkTransactionReport_Click">Transaction</a></li>
+                                <li id="tdResourcesReport" runat="server"><a runat="server" href="~/Reports/ResourceReport.aspx" onclick="tdLinkResourcesReport_Click">Resources</a></li>
+<%--                                <li><a runat="server" href="#">Report 1</a></li>
+                                <li><a href="#">Modificar</a></li>
+                                <li><a href="#">Reportar</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Informes</a></li>--%>
+                            </ul>
+                        </li>
+                        <li id="tdLinkChangePass"  runat="server"><a href="#">Change Password<span style="font-size: 16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-lock"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+
+
+
+        <div class="container body-content" style="padding-left: 150px">
+            <div class="content_placehold">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+           
+        </div>
+
+    </form>
+    <!-- -->
+      <div id="footer" style="background: radial-gradient(at top left, cornflowerblue, darkblue); color:white; align-items:center;" <%--style="vertical-align:bottom"--%>>
+<%--            <footer class="CommonFooter">--%>
+                &copy; <%: DateTime.Now.Year %> - Standard Bank 2016, Moving Forward
+  <%--          </footer>--%>
+        </div>
+</body>
+</html>
